@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JokesFragment"
+    android:paddingBottom="30dp">
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_view"
+        android:layout_above="@id/jokes_count_edit"
+        />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="Count..."
+        android:layout_centerHorizontal="true"
+        android:id="@+id/jokes_count_edit"
+        android:inputType="numberDecimal"
+        android:layout_above="@+id/btn_reload"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_reload"
+        android:layout_margin="15dp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/black"
+        android:text="@string/Jokes_reload"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>
